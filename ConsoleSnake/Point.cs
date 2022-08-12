@@ -27,19 +27,19 @@
         {
             if (direction == Direction.RIGHT)
             {
-                x = x + offset;
+                x += offset;
             }
             else if (direction == Direction.LEFT)
             {
-                x = x - offset;
+                x -= offset;
             }
             else if (direction == Direction.UP)
             {
-                y = y - offset;
+                y -= offset;
             }
             else if (direction == Direction.DOWN)
             {
-                y = y + offset;
+                y -= offset;
             }
         }
         public bool IsHit(Point p)
@@ -58,7 +58,7 @@
         }
         public override string ToString()
         {
-            return x + ", " + y + ", " + sym;
+            return $"{x}, {y}, {sym}";
         }
     }
 }
